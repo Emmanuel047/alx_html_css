@@ -224,9 +224,12 @@
     padding: 0;
     list-style: none;
     text-align: center;
-    margin: var(--nav-item-margin);
   }
   
+  .nav .nav-item + .nav-item {
+    margin: var(--nav-item-margin);
+  }
+
   .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -264,19 +267,20 @@
   
   /* Header
       ============================= */
+      .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
          background: transparent;
   }
-
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+  
+  
   
   /* Footer
       ============================= */
@@ -376,9 +380,10 @@
     padding: 10rem 40rem 2rem 0;
   }
   
-  /* Section Latest news ============================= */
+  /* Section Latest news 
+      ============================= */
   
-  .section-latest-news{
+  .section-latest-news .row {
     flex-direction: row-reverse;
   }
 /* Section SERVICES ============================= */
