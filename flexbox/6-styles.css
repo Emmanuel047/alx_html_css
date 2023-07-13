@@ -218,16 +218,13 @@
   /* Navbar
       ============================= */
   
-  .nav {
+  .nav .nav .nav-item + .nav-item {
+    margin: var(--nav-item-margin);
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
-    margin: var(--nav-item-margin);
-  }
-  
-  .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
 
