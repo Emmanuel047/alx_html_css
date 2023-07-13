@@ -264,20 +264,19 @@
   
   /* Header
       ============================= */
-  .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-  
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
          background: transparent;
   }
-  
-  
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   
   /* Footer
       ============================= */
